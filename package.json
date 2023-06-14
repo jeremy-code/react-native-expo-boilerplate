@@ -1,0 +1,65 @@
+{
+  "name": "react-native-expo-boilerplate",
+  "version": "1.0.0",
+  "description": "A React Native Expo boilerplate with TypeScript, ESLint, Prettier, Husky, and lint-staged",
+  "keywords": [
+    "react",
+    "react-native",
+    "expo",
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jeremy-code/react-native-expo-boilerplate#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremy-code/react-native-expo-boilerplate.git"
+  },
+  "author": "Jeremy Nguyen <hi@jeremy.ng> (https://jeremy.ng)",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "expo": "~48.0.18",
+    "expo-constants": "~14.2.1",
+    "expo-linking": "~4.0.1",
+    "expo-router": "^1.7.6",
+    "expo-status-bar": "~1.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "0.71.8",
+    "react-native-gesture-handler": "~2.9.0",
+    "react-native-safe-area-context": "4.5.0",
+    "react-native-screens": "~3.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
+    "@types/react": "~18.0.14",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "eslint": "^8.42.0",
+    "eslint-config-universe": "^11.2.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "typescript": "^4.9.4"
+  },
+  "resolutions": {
+    "metro": "^0.76.0",
+    "metro-resolver": "^0.76.0"
+  },
+  "private": true
+}
