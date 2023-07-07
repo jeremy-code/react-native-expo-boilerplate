@@ -4,6 +4,9 @@ const config = {
   parserOptions: {
     project: "./tsconfig.json",
   },
+  rules: {
+    "import/order": "off",
+  },
 };
 
 module.exports = config;

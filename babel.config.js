@@ -3,7 +3,11 @@ const config = (api) => {
   api.cache(true);
   return {
     presets: ["babel-preset-expo"],
-    plugins: ["expo-router/babel", ["module-resolver", { alias: { "~": "./src" } }]],
+    plugins: [
+      "expo-router/babel",
+      "react-native-reanimated/plugin",
+      ["module-resolver", { alias: { "~": "./src" } }],
+    ],
   };
 };
 

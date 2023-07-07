@@ -1,27 +1,26 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Button, Icon } from "@ui-kitten/components";
+import { Text, View } from "react-native";
 
-import { getString } from "~/utils/api";
+// import { getString } from "~/utils/api";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export const FacebookIcon = (props) => <Icon name="facebook" {...props} />;
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
+    <View>
       <Text>Open up App.tsx to start working on your app!</Text>
-      <Button
+      {/* <Button
         title="Click me"
         onPress={() => {
           // eslint-disable-next-line no-console
           console.log(getString());
         }}
-      />
+      /> */}
+      <Text>Text goes here</Text>
+
+      <Button accessoryLeft={FacebookIcon}>Login with Facebook</Button>
     </View>
   );
-}
+};
+
+export default App;
